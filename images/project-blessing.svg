@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c16" />
+      <stop offset="50%" stop-color="#0f1424" />
+      <stop offset="100%" stop-color="#070911" />
+    </linearGradient>
+
+    <linearGradient id="purpleCyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#191f38" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f1325" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="phoneBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Filter for Glow -->
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <radialGradient id="ambientOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="cyanOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="675" fill="url(#bgGradient)" />
+
+  <!-- Delicate Geometric Islamic Star Grid Pattern -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1" fill="none">
+    <circle cx="200" cy="150" r="100" />
+    <circle cx="200" cy="150" r="60" />
+    <polygon points="200,50 270,120 300,150 270,180 200,250 130,180 100,150 130,120" />
+    <polygon points="200,70 250,90 280,150 250,210 200,230 150,210 120,150 150,90" transform="rotate(45 200 150)" />
+
+    <circle cx="1050" cy="500" r="120" />
+    <polygon points="1050,380 1135,465 1170,500 1135,535 1050,620 965,535 930,500 965,465" />
+  </g>
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="350" cy="250" r="280" fill="url(#ambientOrb)" />
+  <circle cx="850" cy="420" r="250" fill="url(#cyanOrb)" />
+
+  <!-- Left Side: Presentation Typography & Case Study Meta -->
+  <g transform="translate(80, 110)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="180" height="34" rx="17" fill="rgba(139, 92, 246, 0.15)" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1" />
+    <circle cx="20" cy="17" r="5" fill="#8b5cf6" />
+    <text x="36" y="22" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#a78bfa" letter-spacing="1">CASE STUDY • 03</text>
+
+    <!-- App Title -->
+    <text x="0" y="85" font-family="'Space Grotesk', sans-serif" font-size="52" font-weight="700" fill="#ffffff" letter-spacing="-1">Blessing</text>
+    <text x="0" y="125" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="500" fill="#38bdf8">Islamic Lifestyle Tracker</text>
+
+    <!-- Description -->
+    <text x="0" y="175" font-family="'Inter', sans-serif" font-size="16" fill="#94a3b8" width="380">
+      <tspan x="0" dy="0">An Islamic lifestyle app concept designed to</tspan>
+      <tspan x="0" dy="26">help users organize worship routines, monitor</tspan>
+      <tspan x="0" dy="26">prayer times, and track spiritual goals with peace.</tspan>
+    </text>
+
+    <!-- Feature Pillars -->
+    <g transform="translate(0, 260)">
+      <!-- Feature 1 -->
+      <rect x="0" y="0" width="170" height="70" rx="12" fill="url(#cardBg)" stroke="rgba(255,255,255,0.08)" />
+      <text x="16" y="28" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#38bdf8">PRAYER TIMES</text>
+      <text x="16" y="50" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">GPS Auto-Calculation</text>
+
+      <!-- Feature 2 -->
+      <rect x="185" y="0" width="170" height="70" rx="12" fill="url(#cardBg)" stroke="rgba(255,255,255,0.08)" />
+      <text x="201" y="28" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#a78bfa">QURAN TRACKER</text>
+      <text x="201" y="50" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">Streak &amp; Surah Recitation</text>
+    </g>
+
+    <!-- Tools Tags -->
+    <g transform="translate(0, 360)">
+      <text x="0" y="16" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#64748b" letter-spacing="1">TOOLS &amp; METHODOLOGY</text>
+      <g transform="translate(0, 30)">
+        <rect x="0" y="0" width="70" height="28" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" />
+        <text x="35" y="18" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" fill="#e2e8f0">Figma</text>
+
+        <rect x="80" y="0" width="130" height="28" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" />
+        <text x="145" y="18" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" fill="#e2e8f0">Mobile UI Design</text>
+
+        <rect x="220" y="0" width="105" height="28" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" />
+        <text x="272" y="18" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" fill="#e2e8f0">UI/UX Design</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side: Dual Smartphone UI Mockups -->
+  <!-- PHONE 1: Home Dashboard & Prayer Curve -->
+  <g transform="translate(540, 50)">
+    <!-- Phone Outer Shell -->
+    <rect x="0" y="0" width="290" height="575" rx="42" fill="#080911" stroke="url(#phoneBorder)" stroke-width="4" />
+    <!-- Dynamic Island / Speaker Notch -->
+    <rect x="95" y="14" width="100" height="24" rx="12" fill="#000000" />
+    <circle cx="175" cy="26" r="4.5" fill="#1e2238" />
+
+    <!-- Screen Content Container -->
+    <g transform="translate(18, 48)">
+      <!-- App Header -->
+      <text x="4" y="24" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700" fill="#ffffff">Blessing</text>
+      <!-- Crescent & Star Icon -->
+      <path d="M 230 18 A 12 12 0 1 0 242 30 A 10 10 0 1 1 230 18 Z" fill="#38bdf8" />
+
+      <text x="4" y="44" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">Kozhikode, India • 14 Shawwal</text>
+
+      <!-- Active Prayer Card -->
+      <rect x="0" y="60" width="254" height="130" rx="18" fill="url(#cardBg)" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1.5" />
+      <g transform="translate(16, 75)">
+        <text x="0" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#a78bfa" letter-spacing="1">UPCOMING PRAYER</text>
+        <text x="0" y="46" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="700" fill="#ffffff">Asr</text>
+        <text x="56" y="46" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="500" fill="#38bdf8">• 04:38 PM</text>
+        <text x="0" y="74" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">Time remaining: 42 mins</text>
+        <!-- Mini Progress Bar -->
+        <rect x="0" y="86" width="222" height="6" rx="3" fill="rgba(255,255,255,0.1)" />
+        <rect x="0" y="86" width="160" height="6" rx="3" fill="url(#purpleCyanGrad)" />
+      </g>
+
+      <!-- Today's Routine Timeline -->
+      <text x="4" y="215" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" fill="#ffffff">Daily Prayers</text>
+
+      <!-- Prayer List Pills -->
+      <g transform="translate(0, 226)">
+        <!-- Fajr -->
+        <rect x="0" y="0" width="254" height="42" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
+        <text x="14" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#e2e8f0">Fajr</text>
+        <text x="150" y="26" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">05:12 AM</text>
+        <circle cx="230" cy="21" r="7" fill="#10b981" />
+        <path d="M 227 21 L 229 23 L 233 19" stroke="#ffffff" stroke-width="1.5" fill="none" />
+
+        <!-- Dhuhr -->
+        <rect x="0" y="48" width="254" height="42" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
+        <text x="14" y="74" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#e2e8f0">Dhuhr</text>
+        <text x="150" y="74" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">12:26 PM</text>
+        <circle cx="230" cy="69" r="7" fill="#10b981" />
+        <path d="M 227 69 L 229 71 L 233 67" stroke="#ffffff" stroke-width="1.5" fill="none" />
+
+        <!-- Asr (Active) -->
+        <rect x="0" y="96" width="254" height="42" rx="10" fill="rgba(139, 92, 246, 0.15)" stroke="rgba(139, 92, 246, 0.5)" />
+        <text x="14" y="122" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#ffffff">Asr</text>
+        <text x="150" y="122" font-family="'Inter', sans-serif" font-size="12" fill="#a78bfa">04:38 PM</text>
+        <circle cx="230" cy="117" r="7" fill="#8b5cf6" />
+        <circle cx="230" cy="117" r="3" fill="#ffffff" />
+
+        <!-- Maghrib -->
+        <rect x="0" y="144" width="254" height="42" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
+        <text x="14" y="170" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#94a3b8">Maghrib</text>
+        <text x="150" y="170" font-family="'Inter', sans-serif" font-size="12" fill="#64748b">06:44 PM</text>
+        <circle cx="230" cy="165" r="7" stroke="#475569" stroke-width="1.5" fill="none" />
+
+        <!-- Isha -->
+        <rect x="0" y="192" width="254" height="42" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
+        <text x="14" y="218" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#94a3b8">Isha</text>
+        <text x="150" y="218" font-family="'Inter', sans-serif" font-size="12" fill="#64748b">07:58 PM</text>
+        <circle cx="230" cy="213" r="7" stroke="#475569" stroke-width="1.5" fill="none" />
+      </g>
+
+      <!-- Bottom Nav Bar -->
+      <g transform="translate(0, 475)">
+        <rect x="0" y="0" width="254" height="40" rx="20" fill="rgba(15, 19, 37, 0.95)" stroke="rgba(255,255,255,0.1)" />
+        <circle cx="45" cy="20" r="10" fill="#8b5cf6" />
+        <circle cx="127" cy="20" r="6" fill="#475569" />
+        <circle cx="209" cy="20" r="6" fill="#475569" />
+      </g>
+    </g>
+  </g>
+
+  <!-- PHONE 2: Spiritual Goals & Habit Tracker -->
+  <g transform="translate(850, 75)">
+    <!-- Phone Outer Shell -->
+    <rect x="0" y="0" width="290" height="550" rx="42" fill="#080911" stroke="url(#phoneBorder)" stroke-width="4" />
+    <!-- Dynamic Island -->
+    <rect x="95" y="14" width="100" height="24" rx="12" fill="#000000" />
+    <circle cx="175" cy="26" r="4.5" fill="#1e2238" />
+
+    <!-- Screen Content Container -->
+    <g transform="translate(18, 48)">
+      <text x="4" y="24" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700" fill="#ffffff">Spiritual Habits</text>
+      <text x="4" y="44" font-family="'Inter', sans-serif" font-size="12" fill="#38bdf8">14-Day Streak 🔥</text>
+
+      <!-- Circular Goal Progress Card -->
+      <rect x="0" y="60" width="254" height="150" rx="18" fill="url(#cardBg)" stroke="rgba(6, 182, 212, 0.35)" stroke-width="1.5" />
+      <g transform="translate(20, 75)">
+        <!-- Circle Progress Ring -->
+        <circle cx="45" cy="50" r="38" stroke="rgba(255,255,255,0.1)" stroke-width="8" fill="none" />
+        <circle cx="45" cy="50" r="38" stroke="url(#emeraldGrad)" stroke-width="8" stroke-dasharray="238" stroke-dashoffset="48" stroke-linecap="round" fill="none" />
+        <text x="45" y="55" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700" fill="#ffffff">80%</text>
+
+        <text x="105" y="32" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" fill="#ffffff">Daily Goals</text>
+        <text x="105" y="52" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">4 of 5 activities done</text>
+        <rect x="105" y="65" width="95" height="24" rx="12" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.4)" />
+        <text x="152" y="81" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#10b981">On Track</text>
+      </g>
+
+      <!-- Routine Cards -->
+      <g transform="translate(0, 230)">
+        <!-- Quran Habit Card -->
+        <rect x="0" y="0" width="254" height="66" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" />
+        <circle cx="32" cy="33" r="16" fill="rgba(139, 92, 246, 0.2)" />
+        <text x="32" y="38" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" fill="#a78bfa">📖</text>
+        <text x="60" y="28" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600" fill="#ffffff">Quran Recitation</text>
+        <text x="60" y="46" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Surah Al-Kahf • 6 Pages</text>
+        <circle cx="228" cy="33" r="8" fill="#10b981" />
+        <path d="M 225 33 L 227 35 L 231 31" stroke="#ffffff" stroke-width="1.5" fill="none" />
+
+        <!-- Dhikr Counter Card -->
+        <rect x="0" y="76" width="254" height="66" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" />
+        <circle cx="32" cy="109" r="16" fill="rgba(6, 182, 212, 0.2)" />
+        <text x="32" y="114" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" fill="#38bdf8">📿</text>
+        <text x="60" y="104" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600" fill="#ffffff">Morning &amp; Evening Dhikr</text>
+        <text x="60" y="122" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">33 / 33 completed</text>
+        <circle cx="228" cy="109" r="8" fill="#10b981" />
+        <path d="M 225 109 L 227 111 L 231 107" stroke="#ffffff" stroke-width="1.5" fill="none" />
+
+        <!-- Reflection Note Card -->
+        <rect x="0" y="152" width="254" height="66" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" />
+        <circle cx="32" cy="185" r="16" fill="rgba(245, 158, 11, 0.2)" />
+        <text x="32" y="190" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" fill="#fbbf24">✍️</text>
+        <text x="60" y="180" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600" fill="#ffffff">Daily Gratitude</text>
+        <text x="60" y="198" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Saved in personal journal</text>
+        <circle cx="228" cy="185" r="8" fill="#10b981" />
+        <path d="M 225 185 L 227 187 L 231 183" stroke="#ffffff" stroke-width="1.5" fill="none" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Ambient Bottom Glow Line -->
+  <line x1="0" y1="673" x2="1200" y2="673" stroke="url(#purpleCyanGrad)" stroke-width="2" opacity="0.6" />
+</svg>

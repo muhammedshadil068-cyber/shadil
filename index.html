@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===================================================================
+         PORTFOLIO WEBSITE — MUHAMMED SHADIL
+         Role: UI/UX Designer & Aspiring Frontend Developer
+         Location: Kozhikode, Kerala, India
+         Tech Stack: HTML5, CSS3, Bootstrap 5 (CDN), Vanilla JavaScript
+         Aesthetic: Dark Studio, Electric Purple & Neon Cyan Glow, Space Grotesk
+         =================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>MUHAMMED SHADIL | UI/UX Designer & Aspiring Frontend Developer</title>
+    <meta name="description" content="Portfolio of Muhammed Shadil — UI/UX Designer and Aspiring Frontend Developer based in Kozhikode, Kerala, India. Crafting user-centered interfaces, wireframes, prototypes, and responsive web experiences.">
+    <meta name="keywords" content="Muhammed Shadil, UI/UX Designer, Frontend Developer, Portfolio, Figma, Softronics, Kozhikode, Kerala, Web Design, Responsive Design">
+    <meta name="author" content="Muhammed Shadil">
+
+    <!-- Open Graph (for social sharing & preview) -->
+    <meta property="og:title" content="MUHAMMED SHADIL — UI/UX Designer Portfolio">
+    <meta property="og:description" content="Explore selected UI/UX design case studies, creative prototypes, and frontend web projects.">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon (Inline SVG Gradient Icon) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%238b5cf6'/><stop offset='100%25' stop-color='%2306b6d4'/></linearGradient></defs><rect width='100' height='100' rx='28' fill='url(%23g)'/><text x='50%25' y='65%25' font-size='52' font-weight='800' fill='white' font-family='sans-serif' text-anchor='middle'>S</text></svg>">
+
+    <!-- Google Fonts: Space Grotesk (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome Icons (v6.5.2) CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Custom Portfolio Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="90" tabindex="0">
+
+    <!-- ===================================================================
+         DESKTOP CUSTOM CURSOR (Subtle, Accessible, Auto-hidden on touch)
+         =================================================================== -->
+    <div class="custom-cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="custom-cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+    <!-- ===================================================================
+         AMBIENT LIGHTING GLOW ORBS
+         =================================================================== -->
+    <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+    <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+    <div class="ambient-glow glow-mid" aria-hidden="true"></div>
+
+    <!-- ===================================================================
+         A. NAVIGATION BAR (Floating & Glassmorphic)
+         =================================================================== -->
+    <header>
+        <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-dark custom-navbar" aria-label="Main Navigation">
+            <div class="container">
+                <!-- Brand Logo: SHADIL. -->
+                <a class="navbar-brand brand-logo d-flex align-items-center gap-2" href="#home" id="brand-logo" aria-label="Muhammed Shadil - Home">
+                    <span class="logo-symbol">S</span>
+                    <span class="brand-text">SHADIL<span class="accent-dot">.</span></span>
+                </a>
+
+                <!-- Mobile Hamburger Toggler Button -->
+                <button class="navbar-toggler custom-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarTogglerBtn">
+                    <span class="toggler-icon-bar top-bar"></span>
+                    <span class="toggler-icon-bar mid-bar"></span>
+                    <span class="toggler-icon-bar bot-bar"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home" id="nav-link-home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" id="nav-link-about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" id="nav-link-skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" id="nav-link-projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#process" id="nav-link-process">Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education" id="nav-link-education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" id="nav-link-contact">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Highlighted CTA: Let's Talk -->
+                    <div class="ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#contact" class="btn btn-outline-glow" id="nav-cta-talk">
+                            <span>Let's Talk</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ===================================================================
+             B. HERO SECTION
+             =================================================================== -->
+        <section id="home" class="hero-section position-relative">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+
+                    <!-- Left Column: Editorial Hero Info -->
+                    <div class="col-lg-7 text-center text-lg-start hero-text-col">
+                        
+                        <!-- Small Label: AVAILABLE FOR CREATIVE OPPORTUNITIES -->
+                        <div class="hero-status-badge mb-3 reveal-init">
+                            <span class="status-pulse-dot" aria-hidden="true"></span>
+                            <span>AVAILABLE FOR CREATIVE OPPORTUNITIES</span>
+                        </div>
+
+                        <!-- Greeting: HELLO, I'M -->
+                        <h2 class="hero-greeting mb-2 reveal-init delay-1">HELLO, I’M</h2>
+
+                        <!-- Large Heading: MUHAMMED SHADIL -->
+                        <h1 class="hero-name mb-3 reveal-init delay-1" id="hero-name-heading">
+                            MUHAMMED <span class="text-gradient">SHADIL</span>
+                        </h1>
+
+                        <!-- Dynamic Role Cycling Text -->
+                        <div class="hero-role-wrapper d-flex align-items-center mb-3 reveal-init delay-2">
+                            <span class="role-dynamic" id="dynamicRoleText" aria-live="polite">UI/UX DESIGNER</span>
+                            <span class="typing-cursor" aria-hidden="true"></span>
+                        </div>
+
+                        <!-- Introduction -->
+                        <p class="hero-bio lead mb-4 pe-lg-4 reveal-init delay-2" id="hero-intro-text">
+                            “I design digital experiences that bring creativity and functionality together.”
+                        </p>
+
+                        <!-- CTA Group -->
+                        <div class="hero-cta-group d-flex flex-wrap gap-3 mb-4 reveal-init delay-3">
+                            <a href="#projects" class="btn btn-gradient" id="hero-btn-work">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <span>EXPLORE MY WORK</span>
+                            </a>
+                            <a href="#contact" class="btn btn-glass" id="hero-btn-connect">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                <span>LET’S CONNECT</span>
+                            </a>
+                        </div>
+
+                        <!-- Social Icons (Instagram, LinkedIn, GitHub) -->
+                        <div class="hero-socials d-flex align-items-center gap-3 pt-2 reveal-init delay-4">
+                            <span class="text-muted-custom small me-1">Find me on:</span>
+                            <!-- Instagram -->
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Muhammed Shadil on Instagram" title="Instagram" id="hero-social-instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Muhammed Shadil on LinkedIn" title="LinkedIn" id="hero-social-linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <!-- GitHub -->
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Muhammed Shadil on GitHub" title="GitHub" id="hero-social-github">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Creative Profile Image Area -->
+                    <div class="col-lg-5 hero-visual-col">
+                        <div class="hero-visual-wrapper position-relative reveal-init delay-2">
+                            <!-- Gradient Glow Behind Profile -->
+                            <div class="hero-visual-glow" aria-hidden="true"></div>
+
+                            <!-- Rounded Avatar Frame -->
+                            <div class="hero-avatar-frame">
+                                <div class="hero-avatar-inner">
+                                    <img src="images/profile.jpg" alt="Muhammed Shadil — UI/UX Designer & Aspiring Frontend Developer" class="hero-avatar-img" id="hero-profile-image">
+                                </div>
+                            </div>
+
+                            <!-- Floating Label 1: UI/UX Design -->
+                            <div class="floating-badge badge-float-1" aria-hidden="true">
+                                <div class="badge-icon badge-icon-purple">
+                                    <i class="fa-brands fa-figma"></i>
+                                </div>
+                                <div>
+                                    <div class="badge-title">UI/UX Design</div>
+                                    <div class="badge-desc">Figma &amp; Wireframes</div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Label 2: Creative Thinking -->
+                            <div class="floating-badge badge-float-2" aria-hidden="true">
+                                <div class="badge-icon badge-icon-blue">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                </div>
+                                <div>
+                                    <div class="badge-title">Creative Thinking</div>
+                                    <div class="badge-desc">Intuitive Solutions</div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Label 3: User-Centered Design -->
+                            <div class="floating-badge badge-float-3" aria-hidden="true">
+                                <div class="badge-icon badge-icon-pink">
+                                    <i class="fa-solid fa-heart-circle-check"></i>
+                                </div>
+                                <div>
+                                    <div class="badge-title">User-Centered Design</div>
+                                    <div class="badge-desc">Empathy &amp; Research</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#about" class="scroll-indicator-link d-none d-md-flex" aria-label="Scroll to About section">
+                <span>SCROLL</span>
+                <div class="scroll-mouse-icon">
+                    <span class="scroll-mouse-wheel"></span>
+                </div>
+            </a>
+        </section>
+
+        <!-- ===================================================================
+             C. ABOUT ME SECTION
+             =================================================================== -->
+        <section id="about" class="section-padding position-relative">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center reveal-init">
+                    <span class="section-badge"><i class="fa-regular fa-user"></i> DISCOVER MY STORY</span>
+                    <h2 class="section-title">A LITTLE <span class="text-gradient">ABOUT ME.</span></h2>
+                    <p class="section-subtitle mx-auto">Bridging the gap between human empathy, beautiful design systems, and frontend implementation.</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+
+                <div class="row align-items-stretch gy-4">
+                    <!-- Left Column: In-depth Narrative & Highlights -->
+                    <div class="col-lg-7">
+                        <div class="about-card-spotlight h-100 d-flex flex-column justify-content-between reveal-init delay-1">
+                            <div>
+                                <p class="about-intro-lead mb-3">
+                                    I am a passionate UI/UX design student interested in creating beautiful, intuitive, and user-friendly digital experiences. Based in <strong>Kozhikode, Kerala, India</strong>, I combine creative curiosity with practical problem-solving.
+                                </p>
+                                <p class="about-paragraph mb-3">
+                                    My design focus spans <strong>user research, wireframes, prototypes, and design systems</strong>. I believe that an interface should not merely look stunning—it must feel effortless, accessible, and responsive across every device screen.
+                                </p>
+                                <p class="about-paragraph mb-4">
+                                    As an aspiring frontend developer, I am expanding my skills in modern HTML5, CSS3, JavaScript, and Bootstrap 5 to ensure seamless collaboration between design vision and real code execution.
+                                </p>
+
+                                <!-- Career Goal Box -->
+                                <div class="p-3 mb-4 rounded-3 border border-secondary-subtle" style="background: rgba(139, 92, 246, 0.08);">
+                                    <div class="d-flex align-items-center gap-2 mb-1 text-accent-purple fw-semibold small">
+                                        <i class="fa-solid fa-bullseye"></i>
+                                        <span>CAREER GOAL</span>
+                                    </div>
+                                    <p class="small text-white mb-0">
+                                        To become a professional UI/UX Designer who combines creativity, usability, and technology to solve real-world problems.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Resume Action Box -->
+                            <div class="resume-action-box d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                <div>
+                                    <div class="text-white fw-bold small mb-1">
+                                        <i class="fa-solid fa-file-pdf text-accent-purple me-1"></i>Curriculum Vitae / Resume
+                                    </div>
+                                    <div class="small text-muted-custom">Ready for recruiter review &amp; design teams</div>
+                                </div>
+                                <button type="button" class="btn btn-gradient btn-sm" id="btn-download-resume" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                                    <i class="fa-solid fa-download"></i>
+                                    <span>Download Resume</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Three Small Highlight Cards -->
+                    <div class="col-lg-5">
+                        <div class="d-flex flex-column gap-3 h-100">
+
+                            <!-- Highlight 1: Creative Problem Solving -->
+                            <div class="highlight-card reveal-init delay-1">
+                                <div class="highlight-icon-box">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+                                <h3 class="highlight-title">Creative Problem Solving</h3>
+                                <p class="highlight-text">
+                                    Transforming tangled user obstacles into intuitive flows, uncluttered layouts, and delightful micro-interactions.
+                                </p>
+                            </div>
+
+                            <!-- Highlight 2: User-Centered Thinking -->
+                            <div class="highlight-card reveal-init delay-2">
+                                <div class="highlight-icon-box" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-blue-light);">
+                                    <i class="fa-solid fa-users-viewfinder"></i>
+                                </div>
+                                <h3 class="highlight-title">User-Centered Thinking</h3>
+                                <p class="highlight-text">
+                                    Grounding design decisions in empathy, persona research, accessibility standards, and iterative user testing.
+                                </p>
+                            </div>
+
+                            <!-- Highlight 3: Continuous Learning -->
+                            <div class="highlight-card reveal-init delay-3">
+                                <div class="highlight-icon-box" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">
+                                    <i class="fa-solid fa-book-open-reader"></i>
+                                </div>
+                                <h3 class="highlight-title">Continuous Learning</h3>
+                                <p class="highlight-text">
+                                    Constantly honing Figma workflows, design systems, and frontend programming to stay ahead of modern digital trends.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             D. SKILLS AND TOOLS SECTION
+             =================================================================== -->
+        <section id="skills" class="section-padding bg-surface-tone position-relative">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center reveal-init">
+                    <span class="section-badge"><i class="fa-solid fa-toolbox"></i> COMPETENCIES &amp; TOOLS</span>
+                    <h2 class="section-title">MY CREATIVE <span class="text-gradient">TOOLKIT.</span></h2>
+                    <p class="section-subtitle mx-auto">Core design methods and development tools I leverage to craft modern digital products.</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+
+                <div class="row g-4">
+                    
+                    <!-- Category 1: Design Skills -->
+                    <div class="col-lg-6">
+                        <div class="p-4 p-md-5 glass-card h-100 reveal-init delay-1">
+                            <h3 class="toolkit-category-title">
+                                <span class="toolkit-category-icon"><i class="fa-solid fa-pen-ruler"></i></span>
+                                <span>Design Skills</span>
+                            </h3>
+
+                            <div class="row g-3">
+                                <!-- UI/UX Design -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-design">
+                                            <i class="fa-solid fa-bezier-curve"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">UI/UX Design</h4>
+                                            <p class="skill-detail">Intuitive interface layouts &amp; visual design systems</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- User Research -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-research">
+                                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">User Research</h4>
+                                            <p class="skill-detail">User personas, pain point identification &amp; empathy</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Wireframing -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-wireframe">
+                                            <i class="fa-solid fa-table-columns"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">Wireframing</h4>
+                                            <p class="skill-detail">Low-fidelity blueprints &amp; structural layout mapping</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Prototyping -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-prototype">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">Prototyping</h4>
+                                            <p class="skill-detail">Interactive flows, smart animations &amp; click-throughs</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- User Flow Design -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-flow">
+                                            <i class="fa-solid fa-diagram-project"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">User Flow Design</h4>
+                                            <p class="skill-detail">Information architecture &amp; navigation decision paths</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Responsive UI Design -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-responsive">
+                                            <i class="fa-solid fa-mobile-screen"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">Responsive UI</h4>
+                                            <p class="skill-detail">Mobile-first flexibility across all screen sizes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Tools and Development -->
+                    <div class="col-lg-6">
+                        <div class="p-4 p-md-5 glass-card h-100 reveal-init delay-2">
+                            <h3 class="toolkit-category-title">
+                                <span class="toolkit-category-icon" style="background: rgba(6, 182, 212, 0.2); color: var(--accent-blue-light);">
+                                    <i class="fa-solid fa-code"></i>
+                                </span>
+                                <span>Tools and Development</span>
+                            </h3>
+
+                            <div class="row g-3">
+                                <!-- Figma -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-figma">
+                                            <i class="fa-brands fa-figma"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">Figma</h4>
+                                            <p class="skill-detail">Auto-layout, components, variables &amp; design tokens</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HTML5 -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-html">
+                                            <i class="fa-brands fa-html5"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">HTML5</h4>
+                                            <p class="skill-detail">Semantic structure, SEO standards &amp; web accessibility</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CSS3 -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-css">
+                                            <i class="fa-brands fa-css3-alt"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">CSS3</h4>
+                                            <p class="skill-detail">Flexbox, CSS Grid, custom properties &amp; keyframes</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- JavaScript -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-js">
+                                            <i class="fa-brands fa-square-js"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">JavaScript</h4>
+                                            <p class="skill-detail">DOM manipulation, event listeners &amp; ES6+ features</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Bootstrap 5 -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-bootstrap">
+                                            <i class="fa-brands fa-bootstrap"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">Bootstrap 5</h4>
+                                            <p class="skill-detail">Grid systems, responsive utilities &amp; components</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Git and GitHub -->
+                                <div class="col-sm-6">
+                                    <div class="skill-card">
+                                        <div class="skill-icon-wrap icon-git">
+                                            <i class="fa-brands fa-git-alt"></i>
+                                        </div>
+                                        <div class="skill-content">
+                                            <h4 class="skill-name">Git &amp; GitHub</h4>
+                                            <p class="skill-detail">Version control, repository management &amp; collaboration</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             E. FEATURED PROJECTS SECTION
+             =================================================================== -->
+        <section id="projects" class="section-padding position-relative">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center reveal-init">
+                    <span class="section-badge"><i class="fa-solid fa-shapes"></i> DESIGN PORTFOLIO</span>
+                    <h2 class="section-title">SELECTED <span class="text-gradient">WORK.</span></h2>
+                    <p class="section-subtitle mx-auto">Explore key UI/UX design case studies and mobile app concepts created with user empathy.</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- PROJECT 01 — LMS: Softroniics Learning Management System -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card reveal-init delay-1" id="project-card-lms">
+                            <!-- Dedicated Visual Preview Area -->
+                            <div class="project-visual-box">
+                                <img src="images/project-lms.jpg" alt="Softroniics Learning Management System — UI/UX Case Study" class="project-thumbnail" loading="lazy">
+                                <span class="project-number-badge">PROJECT 01</span>
+                                <span class="project-category-badge">Web Platform</span>
+                            </div>
+
+                            <div class="project-body">
+                                <h3 class="project-title">LMS: Softroniics Learning Management System</h3>
+                                <p class="project-desc">
+                                    A learning platform concept designed to help students access courses, learning materials, and academic resources through an intuitive interface.
+                                </p>
+
+                                <!-- Technology / Design-Tool Tags -->
+                                <div class="project-tools">
+                                    <span class="tool-tag">Figma</span>
+                                    <span class="tool-tag">UI/UX Design</span>
+                                    <span class="tool-tag">Wireframing</span>
+                                    <span class="tool-tag">Prototyping</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="project-actions">
+                                    <button type="button" class="btn-project-primary" data-bs-toggle="modal" data-bs-target="#modalProjectLMS">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        <span>View Case Study</span>
+                                    </button>
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-secondary" title="GitHub Repository Placeholder">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- PROJECT 02 — AutoResq: Mechanic Assistance App -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card reveal-init delay-2" id="project-card-autoresq">
+                            <!-- Dedicated Visual Preview Area -->
+                            <div class="project-visual-box">
+                                <img src="images/project-autoresq.jpg" alt="AutoResq: Mechanic Assistance App — Mobile UI/UX Design" class="project-thumbnail" loading="lazy">
+                                <span class="project-number-badge">PROJECT 02</span>
+                                <span class="project-category-badge">Mobile App</span>
+                            </div>
+
+                            <div class="project-body">
+                                <h3 class="project-title">AutoResq: Mechanic Assistance App</h3>
+                                <p class="project-desc">
+                                    A mobile app concept that helps users find nearby mechanics and request roadside vehicle assistance with a simple, user-friendly flow.
+                                </p>
+
+                                <!-- Technology / Design-Tool Tags -->
+                                <div class="project-tools">
+                                    <span class="tool-tag">Figma</span>
+                                    <span class="tool-tag">Mobile UI Design</span>
+                                    <span class="tool-tag">User Flow</span>
+                                    <span class="tool-tag">Prototyping</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="project-actions">
+                                    <button type="button" class="btn-project-primary" data-bs-toggle="modal" data-bs-target="#modalProjectAutoResq">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        <span>View Case Study</span>
+                                    </button>
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-secondary" title="GitHub Repository Placeholder">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- PROJECT 03 — Blessing: Islamic Tracker -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card reveal-init delay-3" id="project-card-blessing">
+                            <!-- Dedicated Visual Preview Area -->
+                            <div class="project-visual-box">
+                                <img src="images/project-blessing.svg" alt="Blessing: Islamic Tracker — UI/UX Design Concept" class="project-thumbnail" loading="lazy">
+                                <span class="project-number-badge">PROJECT 03</span>
+                                <span class="project-category-badge">Lifestyle App</span>
+                            </div>
+
+                            <div class="project-body">
+                                <h3 class="project-title">Blessing: Islamic Tracker</h3>
+                                <p class="project-desc">
+                                    An Islamic lifestyle app concept designed to help users organize worship routines and track personal spiritual goals.
+                                </p>
+
+                                <!-- Technology / Design-Tool Tags -->
+                                <div class="project-tools">
+                                    <span class="tool-tag">Figma</span>
+                                    <span class="tool-tag">Mobile App Design</span>
+                                    <span class="tool-tag">UI/UX Design</span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="project-actions">
+                                    <button type="button" class="btn-project-primary" data-bs-toggle="modal" data-bs-target="#modalProjectBlessing">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        <span>View Case Study</span>
+                                    </button>
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-secondary" title="GitHub Repository Placeholder">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             F. MY DESIGN PROCESS SECTION
+             =================================================================== -->
+        <section id="process" class="section-padding bg-surface-tone position-relative">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center reveal-init">
+                    <span class="section-badge"><i class="fa-solid fa-compass-drafting"></i> METHODOLOGY</span>
+                    <h2 class="section-title">HOW I <span class="text-gradient">CREATE.</span></h2>
+                    <p class="section-subtitle mx-auto">A user-centered four-phase design framework ensuring empathy, purpose, and visual finesse.</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+
+                <!-- Process 4-Step Timeline -->
+                <div class="process-timeline">
+                    <div class="row g-4">
+
+                        <!-- Step 1: DISCOVER -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="process-step-card reveal-init delay-1">
+                                <div class="step-number-ring">
+                                    <span class="step-num-text">01</span>
+                                    <span class="step-icon-corner"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                </div>
+                                <h3 class="process-title">DISCOVER</h3>
+                                <p class="process-desc">
+                                    Understand the problem and user needs. Gathering insights through competitive analysis and user empathy research.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: DEFINE -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="process-step-card reveal-init delay-2">
+                                <div class="step-number-ring">
+                                    <span class="step-num-text">02</span>
+                                    <span class="step-icon-corner"><i class="fa-solid fa-bullseye"></i></span>
+                                </div>
+                                <h3 class="process-title">DEFINE</h3>
+                                <p class="process-desc">
+                                    Organize requirements and establish goals. Mapping user personas, architecture hierarchies, and core task journeys.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: DESIGN -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="process-step-card reveal-init delay-3">
+                                <div class="step-number-ring">
+                                    <span class="step-num-text">03</span>
+                                    <span class="step-icon-corner"><i class="fa-solid fa-pen-nib"></i></span>
+                                </div>
+                                <h3 class="process-title">DESIGN</h3>
+                                <p class="process-desc">
+                                    Create wireframes, visual interfaces, and prototypes. Building high-fidelity screens in Figma with component tokens.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: REFINE -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="process-step-card reveal-init delay-4">
+                                <div class="step-number-ring">
+                                    <span class="step-num-text">04</span>
+                                    <span class="step-icon-corner"><i class="fa-solid fa-sliders"></i></span>
+                                </div>
+                                <h3 class="process-title">REFINE</h3>
+                                <p class="process-desc">
+                                    Review usability and improve the experience. Testing interactive prototypes, iterating feedback, and preparing frontend handoff.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             G. EDUCATION & LEARNING JOURNEY SECTION
+             =================================================================== -->
+        <section id="education" class="section-padding position-relative">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center reveal-init">
+                    <span class="section-badge"><i class="fa-solid fa-graduation-cap"></i> EDUCATION &amp; PATHWAY</span>
+                    <h2 class="section-title">MY LEARNING <span class="text-gradient">JOURNEY.</span></h2>
+                    <p class="section-subtitle mx-auto">Foundations in design theory, hands-on user experience training, and continuous learning.</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+
+                <!-- Vertical Timeline / Education Cards -->
+                <div class="education-timeline">
+
+                    <!-- Education 1: UI/UX Design Course — Softronics, Kozhikode -->
+                    <div class="edu-item reveal-init delay-1">
+                        <div class="edu-node"><i class="fa-solid fa-award"></i></div>
+                        <div class="edu-card">
+                            <span class="edu-badge-year">SPECIALIZED TRAINING</span>
+                            <h3 class="edu-title">UI/UX Design Course</h3>
+                            <div class="edu-institution">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <span>Softronics, Kozhikode</span>
+                            </div>
+                            <p class="edu-details">
+                                Comprehensive curriculum focusing on user experience methodologies, Figma design systems, information architecture, wireframing, high-fidelity prototyping, and responsive layouts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education 2: Degree Education (Editable Placeholder) -->
+                    <div class="edu-item reveal-init delay-2">
+                        <div class="edu-node"><i class="fa-solid fa-user-graduate"></i></div>
+                        <div class="edu-card">
+                            <span class="edu-badge-year">HIGHER EDUCATION</span>
+                            <h3 class="edu-title">[Your Degree Qualification, e.g. BCA / B.Sc / B.Tech / B.Com]</h3>
+                            <div class="edu-institution">
+                                <i class="fa-solid fa-school"></i>
+                                <span>[Institution / College / University Name, Kozhikode, Kerala]</span>
+                            </div>
+                            <p class="edu-details">
+                                Foundation in technology, analytical problem solving, and project development. (Easily update your degree title, college name, and graduation year in <code>index.html</code> under the <code>#education</code> section).
+                            </p>
+                            <div class="edu-editable-hint">
+                                <i class="fa-solid fa-pen-to-square me-1"></i> Editable placeholder: Update with your exact academic details.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education 3: Certifications (Editable Placeholder) -->
+                    <div class="edu-item reveal-init delay-3">
+                        <div class="edu-node"><i class="fa-solid fa-certificate"></i></div>
+                        <div class="edu-card">
+                            <span class="edu-badge-year">CERTIFICATIONS</span>
+                            <h3 class="edu-title">[Verified Certifications / Design &amp; Web Development]</h3>
+                            <div class="edu-institution">
+                                <i class="fa-solid fa-stamp"></i>
+                                <span>[Issuing Organization / Platform, e.g., Coursera, FreeCodeCamp, Google]</span>
+                            </div>
+                            <p class="edu-details">
+                                Professional development courses covering responsive web design, accessibility fundamentals, and user testing best practices. Add your verified credentials here as they are earned.
+                            </p>
+                            <div class="edu-editable-hint">
+                                <i class="fa-solid fa-pen-to-square me-1"></i> Editable placeholder: Add verified certificates when available.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             H. CONTACT SECTION
+             =================================================================== -->
+        <section id="contact" class="section-padding bg-surface-tone position-relative">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center reveal-init">
+                    <span class="section-badge"><i class="fa-regular fa-envelope"></i> GET IN TOUCH</span>
+                    <h2 class="section-title">HAVE A PROJECT <span class="text-gradient">IN MIND?</span></h2>
+                    <p class="section-subtitle mx-auto">I am available for UI/UX design projects, internship opportunities, and creative collaboration.</p>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Left Column: Friendly Invitation & Direct Contact Info -->
+                    <div class="col-lg-5">
+                        <div class="contact-info-card reveal-init delay-1">
+                            <div>
+                                <h3 class="h4 text-white mb-3">Let's build something <span class="text-gradient">exceptional</span> together.</h3>
+                                <p class="text-muted-custom mb-4">
+                                    Whether you need a fresh UI/UX prototype in Figma, a mobile app redesign, or a responsive website, my inbox is always open.
+                                </p>
+
+                                <!-- Email Contact Placeholder -->
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <div class="contact-detail-label">Direct Email</div>
+                                        <a href="mailto:shadil.design@example.com" class="contact-detail-value text-white" id="contact-email-link">
+                                            shadil.design@example.com
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Location -->
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-blue-light); border-color: rgba(6, 182, 212, 0.3);">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <div class="contact-detail-label">Location</div>
+                                        <div class="contact-detail-value">Kozhikode, Kerala, India</div>
+                                    </div>
+                                </div>
+
+                                <!-- Availability Notice -->
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.3);">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                    </div>
+                                    <div>
+                                        <div class="contact-detail-label">Status</div>
+                                        <div class="contact-detail-value">Open to Opportunities</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Social Links in Left Column -->
+                            <div class="pt-4 border-top border-secondary-subtle">
+                                <div class="text-white-50 small mb-2">Connect via social channels:</div>
+                                <div class="d-flex gap-2">
+                                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram Profile" title="Instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Accessible Contact Form -->
+                    <div class="col-lg-7">
+                        <div class="contact-form-card reveal-init delay-2">
+
+                            <!-- Informative Backend Integration Notice -->
+                            <div class="form-backend-banner d-flex align-items-start gap-2">
+                                <i class="fa-solid fa-circle-info text-accent-blue mt-1"></i>
+                                <div>
+                                    <strong>Contact Form Integration:</strong> This form features client-side validation. To receive messages in your inbox, connect your endpoint (e.g. Formspree or EmailJS as detailed in <code>README.md</code>).
+                                </div>
+                            </div>
+
+                            <!-- Form -->
+                            <form id="contactForm" novalidate>
+                                <div class="row g-3">
+
+                                    <!-- Full Name Field -->
+                                    <div class="col-md-6">
+                                        <label for="userName" class="custom-form-label">Full Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control custom-form-input" id="userName" name="name" placeholder="e.g. Rahul Nair" required aria-required="true">
+                                        <div class="invalid-feedback">Please provide your name.</div>
+                                    </div>
+
+                                    <!-- Email Field -->
+                                    <div class="col-md-6">
+                                        <label for="userEmail" class="custom-form-label">Email Address <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control custom-form-input" id="userEmail" name="email" placeholder="name@example.com" required aria-required="true">
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+
+                                    <!-- Subject Field -->
+                                    <div class="col-12">
+                                        <label for="msgSubject" class="custom-form-label">Subject <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control custom-form-input" id="msgSubject" name="subject" placeholder="Project Inquiry / Creative Collaboration" required aria-required="true">
+                                        <div class="invalid-feedback">Please specify a subject for your message.</div>
+                                    </div>
+
+                                    <!-- Message Textarea -->
+                                    <div class="col-12">
+                                        <label for="userMessage" class="custom-form-label">Message <span class="text-danger">*</span></label>
+                                        <textarea class="form-control custom-form-input" id="userMessage" name="message" rows="5" placeholder="Hi Shadil, I loved your UI/UX portfolio and would like to discuss..." required aria-required="true"></textarea>
+                                        <div class="invalid-feedback">Please write your message before sending.</div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-gradient w-100 py-3" id="btnSubmitMessage">
+                                            <i class="fa-regular fa-paper-plane"></i>
+                                            <span>Send Message</span>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                            <!-- Submission Alert Container -->
+                            <div id="contactFormAlert" class="mt-3 d-none" role="alert"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================================================================
+         I. FOOTER
+         =================================================================== -->
+    <footer class="portfolio-footer">
+        <div class="container">
+            <div class="row align-items-center gy-4 text-center text-md-start">
+
+                <!-- Footer Logo & Tagline -->
+                <div class="col-md-5">
+                    <div class="footer-brand d-inline-flex align-items-center gap-2">
+                        <span class="logo-symbol">S</span>
+                        <span>SHADIL<span class="accent-dot">.</span></span>
+                    </div>
+                    <div class="footer-tagline">DESIGNING EXPERIENCES, BUILDING POSSIBILITIES.</div>
+                    <p class="footer-desc mb-0">
+                        Crafting intuitive, accessible, and modern digital interfaces with deep user empathy and creative execution.
+                    </p>
+                </div>
+
+                <!-- Footer Navigation Links -->
+                <div class="col-md-4">
+                    <nav class="footer-nav-links justify-content-center justify-content-md-start" aria-label="Footer Navigation">
+                        <a href="#home" class="footer-nav-link">Home</a>
+                        <a href="#about" class="footer-nav-link">About</a>
+                        <a href="#skills" class="footer-nav-link">Skills</a>
+                        <a href="#projects" class="footer-nav-link">Projects</a>
+                        <a href="#process" class="footer-nav-link">Process</a>
+                        <a href="#education" class="footer-nav-link">Education</a>
+                        <a href="#contact" class="footer-nav-link">Contact</a>
+                    </nav>
+                </div>
+
+                <!-- Footer Social Media Links -->
+                <div class="col-md-3 text-center text-md-end">
+                    <div class="d-inline-flex gap-2">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <hr class="footer-divider">
+
+            <!-- Copyright Line with Dynamic Year -->
+            <div class="text-center">
+                <p class="footer-copy mb-0">
+                    &copy; <span id="copyrightYear">2026</span> <strong class="text-white">MUHAMMED SHADIL</strong>. All rights reserved. Crafted with clean HTML5, CSS3 &amp; Vanilla JavaScript.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================================================
+         FLOATING BACK TO TOP BUTTON
+         =================================================================== -->
+    <button type="button" class="btn-back-to-top" id="backToTopButton" aria-label="Back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ===================================================================
+         CASE STUDY MODALS (In-Depth UX Presentation)
+         =================================================================== -->
+
+    <!-- Modal 1: LMS Softroniics Case Study -->
+    <div class="modal fade" id="modalProjectLMS" tabindex="-1" aria-labelledby="modalProjectLMSLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass-modal text-white">
+                <div class="modal-header">
+                    <div>
+                        <span class="badge bg-primary bg-opacity-25 text-info border border-info border-opacity-25 mb-1">UI/UX CASE STUDY</span>
+                        <h4 class="modal-title h5" id="modalProjectLMSLabel">LMS: Softroniics Learning Management System</h4>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/project-lms.jpg" alt="Softroniics LMS Full View" class="modal-thumb">
+                    
+                    <h5 class="text-accent-blue fw-bold mb-2">Project Overview</h5>
+                    <p class="small text-muted-custom mb-3">
+                        A learning platform concept designed to help students access courses, learning materials, and academic resources through an intuitive interface. The design removes clutter to allow students to focus directly on learning modules, track progress analytics, and interact with instructional videos without cognitive overload.
+                    </p>
+
+                    <h5 class="text-accent-purple fw-bold mb-2">Design Process &amp; Methodology</h5>
+                    <ul class="small text-muted-custom ps-3 mb-4">
+                        <li><strong>User Research:</strong> Interviewed students at Softroniics regarding learning bottlenecks and mobile video playback frustrations.</li>
+                        <li><strong>Information Architecture:</strong> Structured clear hierarchies separating active syllabus modules, assignments, and resource downloads.</li>
+                        <li><strong>Design System:</strong> Built reusable dark-mode Figma components with high-contrast accessibility (WCAG AA compliant).</li>
+                    </ul>
+
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                        <span class="tool-tag">Figma</span>
+                        <span class="tool-tag">UI/UX Design</span>
+                        <span class="tool-tag">Wireframing</span>
+                        <span class="tool-tag">Prototyping</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-glass btn-sm" data-bs-dismiss="modal">Close</button>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-gradient btn-sm">
+                        <i class="fa-brands fa-github me-1"></i> View Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: AutoResq Mechanic Assistance App Case Study -->
+    <div class="modal fade" id="modalProjectAutoResq" tabindex="-1" aria-labelledby="modalProjectAutoResqLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass-modal text-white">
+                <div class="modal-header">
+                    <div>
+                        <span class="badge bg-primary bg-opacity-25 text-info border border-info border-opacity-25 mb-1">MOBILE UI/UX DESIGN</span>
+                        <h4 class="modal-title h5" id="modalProjectAutoResqLabel">AutoResq: Mechanic Assistance App</h4>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/project-autoresq.jpg" alt="AutoResq App Preview" class="modal-thumb">
+                    
+                    <h5 class="text-accent-blue fw-bold mb-2">Project Overview</h5>
+                    <p class="small text-muted-custom mb-3">
+                        A mobile app concept that helps users find nearby mechanics and request roadside vehicle assistance with a simple, user-friendly flow. Designed for high-stress roadside situations where fast one-tap rescue requests, transparent ETA tracking, and verified mechanic profiles are critical.
+                    </p>
+
+                    <h5 class="text-accent-purple fw-bold mb-2">Key User Experience Solutions</h5>
+                    <ul class="small text-muted-custom ps-3 mb-4">
+                        <li><strong>Emergency 1-Tap Request:</strong> Immediate GPS detection allowing instant roadside tow or mechanic dispatching.</li>
+                        <li><strong>User Flow Optimization:</strong> Streamlined the breakdown diagnosis questionnaire from 6 screens down to 2 intuitive steps.</li>
+                        <li><strong>Live Status Tracking:</strong> Clear visual timeline displaying mechanic dispatch, real-time vehicle route, and estimated time of arrival.</li>
+                    </ul>
+
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                        <span class="tool-tag">Figma</span>
+                        <span class="tool-tag">Mobile UI Design</span>
+                        <span class="tool-tag">User Flow</span>
+                        <span class="tool-tag">Prototyping</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-glass btn-sm" data-bs-dismiss="modal">Close</button>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-gradient btn-sm">
+                        <i class="fa-brands fa-github me-1"></i> View Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Blessing Islamic Tracker Case Study -->
+    <div class="modal fade" id="modalProjectBlessing" tabindex="-1" aria-labelledby="modalProjectBlessingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass-modal text-white">
+                <div class="modal-header">
+                    <div>
+                        <span class="badge bg-primary bg-opacity-25 text-info border border-info border-opacity-25 mb-1">LIFESTYLE APP CONCEPT</span>
+                        <h4 class="modal-title h5" id="modalProjectBlessingLabel">Blessing: Islamic Tracker</h4>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/project-blessing.svg" alt="Blessing App Preview" class="modal-thumb">
+                    
+                    <h5 class="text-accent-blue fw-bold mb-2">Project Overview</h5>
+                    <p class="small text-muted-custom mb-3">
+                        An Islamic lifestyle app concept designed to help users organize worship routines and track personal spiritual goals. The interface combines serene minimalist visuals with habit tracking elements, prayer time countdowns, and daily Quran recitation goals.
+                    </p>
+
+                    <h5 class="text-accent-purple fw-bold mb-2">Design Philosophy</h5>
+                    <ul class="small text-muted-custom ps-3 mb-4">
+                        <li><strong>Tranquil Aesthetic:</strong> Deep obsidian canvas with gentle emerald and cyan gradient accents that promote calm reflection.</li>
+                        <li><strong>Spiritual Habit Tracking:</strong> Motivating 14-day streak counters for daily prayers, dhikr repetitions, and charitable actions.</li>
+                        <li><strong>Clean Accessibility:</strong> High legible typography and uncluttered dashboard widgets tailored for users of all age groups.</li>
+                    </ul>
+
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                        <span class="tool-tag">Figma</span>
+                        <span class="tool-tag">Mobile App Design</span>
+                        <span class="tool-tag">UI/UX Design</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-glass btn-sm" data-bs-dismiss="modal">Close</button>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-gradient btn-sm">
+                        <i class="fa-brands fa-github me-1"></i> View Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Resume Download Guidance Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-modal text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resumeModalLabel"><i class="fa-solid fa-file-pdf text-accent-purple me-2"></i>Download Resume</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="small text-muted-custom mb-3">
+                        To activate this download with your actual PDF resume:
+                    </p>
+                    <ol class="small text-muted-custom ps-3 mb-3">
+                        <li>Export your updated resume from Figma or Google Docs as <code>Muhammed_Shadil_Resume.pdf</code>.</li>
+                        <li>Place the PDF file in this project folder or an <code>assets/</code> subfolder.</li>
+                        <li>Update the download button link in <code>index.html</code> to point to your PDF file.</li>
+                    </ol>
+                    <div class="p-2 rounded bg-black bg-opacity-40 border border-secondary-subtle small font-monospace text-info">
+                        &lt;a href="assets/Muhammed_Shadil_Resume.pdf" download&gt;
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-glass btn-sm" data-bs-dismiss="modal">Got it</button>
+                    <a href="mailto:shadil.design@example.com?subject=Resume%20Request%20-%20Muhammed%20Shadil" class="btn btn-gradient btn-sm">
+                        <i class="fa-regular fa-envelope me-1"></i> Request via Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================
+         SCRIPTS (Bootstrap 5 Bundle & Custom Portfolio Logic)
+         =================================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
